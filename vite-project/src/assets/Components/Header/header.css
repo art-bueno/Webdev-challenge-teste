@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: black;
+    color: white;
+
+    height: 150px;
+    font-size: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    padding-right: 65px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 250px;
+    height: 250px
+}
+
+/* Login */
+.Userimg{
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+}
+
+#LoginContainer{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, #1a46b4,#31a5ac 50%);
+    border: 1px solid #ddd;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.escondido{
+    display: none;
+}
+
+#FormLogin h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#FormLogin label{
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#FormLogin input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btnLogin{
+    padding: 10px 20px;
+    background-color: #0578FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnLogin2[type="button"] {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0B396F;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.btnUser{
+    border-radius: 50%;
+    width: 55px;
+    cursor: pointer;
+}
+
+.UserIMG{
+    border-radius: 100%;
+    width: 49px; 
+    height: 49px;
+    margin-right: 30px;
+}
