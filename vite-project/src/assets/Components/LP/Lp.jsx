@@ -5,20 +5,20 @@ export default function LP(){
         {
           title: 'Hoje | 19:00',
           content: 'Vencedor',
-          buttons: ['Nick Cassidy - 1.85', 'Pascal Wehrlein - 3.40', 'Oliver Rowland - 5.30'],
-          buttonPlus: ['+']
+          buttons: ['Nick Cassidy - 1.85', 'Pascal Wehrlein - 3.40', 'Oliver Rowland - 5.30', '+'],
+         
         },
         {
           title: 'Amanhã | 21:30',
           content: 'Top 3/Pódio',
-          buttons: ['Nick Cassidy - 1.05', 'Jake Dennis - 5.60', 'Mitch Evans - 7.30'],
-          buttonPlus: ['+']
+          buttons: ['Nick Cassidy - 1.05', 'Jake Dennis - 5.60', 'Mitch Evans - 7.30', '+'],
+         
         },
         {
           title: 'Quinta-feira | 16:30',
           content: 'Melhor volta',
-          buttons: ['Nick Cassidy - 1.45', 'Jake Dennis - 9.80', 'Lucas Di Grassi - 15.30',],
-          buttonPlus: ['+']
+          buttons: ['Nick Cassidy - 1.45', 'Jake Dennis - 9.80', 'Lucas Di Grassi - 15.30', '+'],
+         
         },
       ];
     return(
@@ -31,17 +31,24 @@ export default function LP(){
                 <button className="saiba-mais">Saiba mais</button>
             </div>
         </div>
-        <div>
-          {cardsData.map((card, index) => (
+        <div className="flex justify-around">
+          {cardsData.map((card, index)=>
           <Card 
-            key={index}
+            key = {index}
             title={card.title}
             content={card.content}
             buttons={card.buttons}
-            buttonPlus={card.buttonPlus}
-          />
-          ))}
+            />
+            
+          
+          
+          
+          
+          )}
+          
         </div>
+
         </>
+        
     )
 }
